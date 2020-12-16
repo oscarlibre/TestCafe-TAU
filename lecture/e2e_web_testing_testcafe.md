@@ -1,4 +1,4 @@
-# Chapter 1: E2E Web Testing with TestCafe
+# E2E Web Testing with TestCafe
 
 <img src="https://testautomationu.applitools.com/course55.svg" width="300" />
 
