@@ -4,9 +4,9 @@
 - NodeJS and NPM
 - Visual Studio Code
 - Install the recommended plugins for Visual Studio and TestCafe:
-  - TestCafe Snippets
-  - TestCafe Test Runner
-  - TestLatte
+  - TestCafe Snippets - Code snippets for TestCafe(how TestCafe works and how we can write test cases with TestCafe).
+  - TestCafe Test Runner - run our tests from Visual Studio directly using the different browsers.
+  - TestLatte -  This is a sidebar runner with Visual Studio Code.
 
 #### Installing testcafé
 Open a new terminal then run:
