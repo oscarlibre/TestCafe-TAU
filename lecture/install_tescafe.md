@@ -1,4 +1,4 @@
-# Chapter 2 - Install NodeJS , VS Code and TestCafe on macOS
+# Chapter 2 - Install NodeJS , VS Code and TestCafe
 
 #### Requisites
 - NodeJS and NPM
