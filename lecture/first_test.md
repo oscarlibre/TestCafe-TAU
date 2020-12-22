@@ -40,11 +40,41 @@ Use a test controller to:
 - Use the wait functions
 - Execute assertions
 
+#### First Test
+
+We started with the fixture and adding the fixture name, passing it the page or the URL, or the application under tests that we will use.
+Then we are writing our first test with a test name and asynchronous test controller. And after that, with the test controller, we are using 'await' to be handled or to automatically handle the ways for the element to be displayed or to be initialized in the DOM, with a type of script action for the text box, with the click with the radio button, and the click for the submit button.
+
+```javascript
+fixture("First Fixture")
+    .page("https://devexpress.github.io/testcafe/example/");
+test("First Test", async t => {
+    await t
+        .typeText('#developer-name','TAU')
+        .click('#macos')
+        .click('#submit-button');
+});
+```   
+For running our test, we are using TestCafe. And after that, we are using the browser name - for example, we will use Chrome. Then we will select the test - the firstTest.js file inside the tests folder:
+
+```
+testcafe chrome tests/firstTest.js
+```
+
+or 
+
+```
+npx testcafe chrome tests/firstTest.js
+```
+
+
+
 
 #### Resources
 
 ![TestCafe - Organize Tests](https://devexpress.github.io/testcafe/documentation/guides/basic-guides/organize-tests.html)
 
-
 ![Source chapter 3.1](https://testautomationu.applitools.com/testcafe-tutorial/chapter3.1.html)
+
+![Source chapter 3.2](https://testautomationu.applitools.com/testcafe-tutorial/chapter3.2.html)
    
