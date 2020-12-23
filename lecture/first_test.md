@@ -67,7 +67,36 @@ or
 npx testcafe chrome tests/firstTest.js
 ```
 
+#### Using Selectors with Element
 
+- The Selector API provides methods and properties to select elements on the page and get their state
+- TestCafe uses standard CSS selectors to locate elements
+- It's like when you use document.querySelector in JavaScript or FindElementBy.CSSSelector in Selenium Webdriver
+
+In this demo, we will learn how to use selectors for finding elements using TestCafe and JavaScript. Before the fixture, we need to import the selector from TestCafe. So we will use the import keyword. And after that, we can use arrays if we need to import different names.
+
+```javascript
+import {Selector} from 'testcafe';
+```
+
+Here, we are importing the selectors TestCafe that we will be using instead of using the selectors as a hard-coded in our scripts. So we need to edit them, add the constants, and after that, we can use it. So, we replace the hardcoded values for the selectors with the selector function from TestCafe.
+
+```javascript
+import { Selector } from 'testcafe'
+
+const developerName = Selector('#developer-name');
+const osOption = Selector('#macos');
+const submitButton = Selector('#submit-button');
+
+fixture("First Fixture")
+    .page("https://devexpress.github.io/testcafe/example/");
+test("First Test", async t => {
+    await t
+        .typeText(developerName,"TAU")
+        .click(osOption)
+        .click(submitButton);
+    });
+```
 
 
 #### Resources
@@ -77,4 +106,6 @@ npx testcafe chrome tests/firstTest.js
 ![Source chapter 3.1](https://testautomationu.applitools.com/testcafe-tutorial/chapter3.1.html)
 
 ![Source chapter 3.2](https://testautomationu.applitools.com/testcafe-tutorial/chapter3.2.html)
+
+![Source chapter 3.3](https://testautomationu.applitools.com/testcafe-tutorial/chapter3.3.html)
    
